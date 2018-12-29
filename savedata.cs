@@ -3,7 +3,7 @@
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 
-public class GameData // Reference each entry to be saved (use default values)
+public class GameData // Initialize each entry to be saved
 {
 
     // Examples
@@ -33,7 +33,7 @@ public class SaveData
         }
     }
 
-    public static void Load() // Deserialize each entry and load save
+    public static void Load() // Deserialize each entry and load savedata
     {
         if (!File.Exists("gamesave.bin"))
             return;
